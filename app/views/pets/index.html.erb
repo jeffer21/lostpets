@@ -1,0 +1,13 @@
+<h1>Lost Pets</h1>
+<p>If found</p>
+
+<ul>
+  <%= @pets.each do |x| %>
+     <li>
+        <%= link_to pets.name, pet_path(pet) %>
+        <%= pets.species %>
+        <%= pets.found_date %>
+
+        <% end%>
+     </li>
+</ul>
